@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#0b1020">
+  <meta name="description" content="Portfolio of a student developer building practical software projects.">
+  <title>Developer Portfolio | Student Developer</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=DM+Mono:wght@400;500&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="script.js" defer></script>
+</head>
+<body>
+  <header class="site-header">
+    <nav class="nav container" aria-label="Main navigation">
+      <a class="brand" href="#home" aria-label="Home"><span class="brand-mark">L</span><span>leaffoil<span class="accent">.</span></span></a>
+      <button class="menu-toggle" id="menuToggle" aria-label="Toggle navigation" aria-expanded="false">☰</button>
+      <div class="nav-links" id="navLinks">
+        <a href="#about">About</a><a href="#skills">Skills</a><a href="#contact" class="nav-cta">Contact <span>↗</span></a>
+      </div>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero container" id="home">
+      <div class="hero-copy">
+        <div class="eyebrow"><span class="status-dot"></span> IT STUDENT · ASPIRING DEVELOPER</div>
+        <h1>Building useful things<br>with <span class="gradient-text">code.</span></h1>
+        <p class="hero-description">I'm a student developer focused on learning software development by building practical projects, improving my fundamentals, and shipping work one step at a time.</p>
+        <div class="hero-actions">
+          <a class="button button-primary" href="#skills">Explore my skills <span>↓</span></a>
+          <a class="button button-secondary" href="https://github.com/leaffoil" target="_blank" rel="noreferrer">GitHub profile <span>↗</span></a>
+        </div>
+        <div class="hero-meta"><span><span class="meta-symbol">⌘</span> Currently learning Java</span><span><span class="meta-symbol">⌁</span> Open to learning opportunities</span></div>
+      </div>
+      <div class="hero-visual" aria-label="Decorative code editor illustration">
+        <div class="orbit orbit-one"></div><div class="orbit orbit-two"></div>
+        <div class="code-window">
+          <div class="window-bar"><div class="window-dots"><i></i><i></i><i></i></div><span>developer.java</span><span class="window-lock">⌑</span></div>
+          <div class="code-body">
+            <div><span class="line-number">01</span><span class="code-purple">public class</span> <span class="code-yellow">Developer</span> {</div>
+            <div><span class="line-number">02</span>&nbsp;&nbsp;<span class="code-purple">public static void</span> main() {</div>
+            <div><span class="line-number">03</span>&nbsp;&nbsp;&nbsp;&nbsp;String goal =</div>
+            <div><span class="line-number">04</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-green">"Keep building."</span>;</div>
+            <div><span class="line-number">05</span>&nbsp;&nbsp;&nbsp;&nbsp;<span class="code-purple">while</span> (learning) {</div>
+            <div><span class="line-number">06</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;build();</div>
+            <div><span class="line-number">07</span>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;improve();</div>
+            <div><span class="line-number">08</span>&nbsp;&nbsp;&nbsp;&nbsp;}</div>
+            <div><span class="line-number">09</span>&nbsp;&nbsp;}</div>
+            <div><span class="line-number">10</span>}</div>
+            <div class="terminal-line"><span>➜</span> <span class="terminal-text">Ready to build something</span><span class="cursor"></span></div>
+          </div>
+        </div>
+        <div class="floating-chip chip-java"><span class="chip-icon">☕</span><span><b>Java</b><small>Learning & building</small></span></div>
+        <div class="floating-chip chip-git"><span class="git-icon">⑂</span><span><b>Git & GitHub</b><small>Version control</small></span></div>
+      </div>
+    </section>
+
+    <section class="ticker" aria-label="Focus areas"><div class="ticker-track"><span>SOFTWARE DEVELOPMENT</span><b>✳</b><span>JAVA</span><b>✳</b><span>PROBLEM SOLVING</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b><span>SOFTWARE DEVELOPMENT</span><b>✳</b><span>JAVA</span><b>✳</b><span>PROBLEM SOLVING</span><b>✳</b><span>CONTINUOUS LEARNING</span><b>✳</b></div></section>
+
+    <section class="section container" id="about">
+      <div class="section-heading"><span class="section-index">01 / ABOUT</span><h2>Curious by nature.<br><span class="muted">Practical by design.</span></h2></div>
+      <div class="about-grid">
+        <p class="about-lead">I learn best by turning concepts into working projects. My goal is to develop strong programming fundamentals, write cleaner code, and build a portfolio that shows steady progress.</p>
+        <div class="about-details">
+          <div class="detail-row"><span class="detail-label">FOCUS</span><span>Programming fundamentals, logic, and small applications</span></div>
+          <div class="detail-row"><span class="detail-label">APPROACH</span><span>Build → test → learn → improve</span></div>
+          <div class="detail-row"><span class="detail-label">CURRENT STACK</span><span>Java · Git · GitHub · HTML/CSS/JavaScript</span></div>
+        </div>
+      </div>
+    </section>
+
+    <section class="section container" id="skills">
+      <div class="section-heading"><span class="section-index">03 / TOOLKIT</span><h2>Tools I work with<span class="accent">.</span></h2></div>
+      <div class="skills-grid">
+        <div class="skill-item"><span class="skill-icon java-icon">☕</span><div><h3>Java</h3><p>Core syntax, control flow, methods, and beginner projects</p></div><span class="skill-level">LEARNING</span></div>
+        <div class="skill-item"><span class="skill-icon"><icon-placeholder>⌘</icon-placeholder></span><div><h3>Git & GitHub</h3><p>Commits, repositories, and version control workflow</p></div><span class="skill-level">PRACTICING</span></div>
+        <div class="skill-item"><span class="skill-icon web-icon">‹/›</span><div><h3>Web fundamentals</h3><p>HTML structure, CSS styling, and JavaScript basics</p></div><span class="skill-level">BUILDING</span></div>
+        <div class="skill-item"><span class="skill-icon terminal-icon">$_</span><div><h3>Problem solving</h3><p>Breaking problems down into clear, testable steps</p></div><span class="skill-level">ALWAYS</span></div>
+      </div>
+    </section>
+
+    <section class="contact-section" id="contact"><div class="container contact-inner"><span class="section-index">04 / CONTACT</span><h2>Have an idea?<br><span class="muted">Let's connect.</span></h2><p>I'm working on my skills and open to connecting with other learners and developers.</p><div class="contact-actions"><a class="button button-primary" href="https://github.com/leaffoil" target="_blank" rel="noreferrer">Find me on GitHub <span>↗</span></a><a class="button button-secondary" href="mailto:your.email@example.com">Email me <span>↗</span></a></div><small class="replace-note">Replace the placeholder email address in index.html with your real contact email.</small></div></section>
+  </main>
+  <footer class="footer"><div class="container footer-inner"><a class="brand" href="#home"><span class="brand-mark">L</span><span>leaffoil<span class="accent">.</span></span></a><span>Designed and built with HTML, CSS & JavaScript.</span><span>© <span id="year"></span> · Keep building.</span></div></footer>
+</body>
+</html>
