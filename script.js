@@ -23,7 +23,6 @@ document.getElementById("year").textContent = new Date().getFullYear();
 
 const prefersReducedMotion = window.matchMedia("(prefers-reduced-motion: reduce)").matches;
 
-// Reveal sections as they enter the viewport.
 const revealEls = document.querySelectorAll(".reveal");
 if (revealEls.length) {
   if (prefersReducedMotion) {
@@ -44,7 +43,6 @@ if (revealEls.length) {
   }
 }
 
-// Cycle the terminal's status line through a few short messages.
 const terminalText = document.querySelector(".terminal-text");
 if (terminalText && !prefersReducedMotion) {
   const messages = [
